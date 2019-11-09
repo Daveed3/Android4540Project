@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Gantt</string>
+    <string name="task_name">Build Frame</string>
+    <string name="project_date">11/1/19-11/12/19</string>
+    <string name="task_item">Cut Tubes</string>
+    <string name="edit_task">Add Task</string>
+    <string name="upload_file">Upload File</string>
+    <string name="task_item_details">Cut 4 pieces of 1\" 0.065 tubes with lengths  of 5\"</string>
+    <string name="skills_needed">Skills Needed</string>
+    <string name="skill_description">Chop Saw</string>
+    <string name="add_skill">Add Skill</string>
+    <string name="files">Files</string>
+    <string name="file_name">SecondaryMembers.pdf</string>
+    <string name="date_column">Date</string>
+
+
+</resources>
