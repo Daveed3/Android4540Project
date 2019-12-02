@@ -36,8 +36,8 @@ class MainActivity : AppCompatActivity() {
         val myRef = database.getReference()
         println("this is the db:" + myRef)
 //        myRef.child("test").child("trainer").setValue("2")
-        myRef.child("trainer2").child("trainer1").setValue("new")
-//        println(myRef.child("test").child("trainer"))
+        myRef.child("trainer2").setValue("trainer")
+        println(myRef.child("test").child("trainer"))
 
 
 
