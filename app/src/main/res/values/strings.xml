@@ -12,6 +12,12 @@
     <string name="files">Files</string>
     <string name="file_name">SecondaryMembers.pdf</string>
     <string name="date_column">Date</string>
+    <string name="date_completed">Date Completed</string>
+    <string name="date_completed_hint">12/04/19</string>
+    <string name="notes_title">Notes</string>
+    <string name="notes">Completed by: \nPut notes here about project completion.</string>
+    <string name="submit">Submit</string>
+
 
 
 </resources>
