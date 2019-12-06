@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "921110480779",
+    "firebase_url": "https://gantt-63d23.firebaseio.com",
+    "project_id": "gantt-63d23",
+    "storage_bucket": "gantt-63d23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921110480779:android:593c61a1c49850e883518e",
+        "android_client_info": {
+          "package_name": "com.example.gantt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921110480779-v0jnggk10p040hq54u0ln7fibute5khb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gantt",
+            "certificate_hash": "273a637c45d20858c95e122063cf47cb17b623a7"
+          }
+        },
+        {
+          "client_id": "921110480779-rool4a1g9kjcf3tueg0i5uui0cis3mgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9NiNqoPftzjj8UV389lPl_ILuIo0lNxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921110480779-rool4a1g9kjcf3tueg0i5uui0cis3mgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
