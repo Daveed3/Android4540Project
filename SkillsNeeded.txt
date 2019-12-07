@@ -2,3 +2,28 @@ Android -----
 Lathe
 Mill
 Weld
+Tube Notching
+Solidworks - CAD
+Solidworks - Tube Drawing
+Solidworks - Drawing
+Solidworks - Weldments
+Solidworks - Simulation
+MatLab
+Pedestal Grinder
+Power Tools
+Hand Tools
+Vertical Band Saw
+Horizontal Band Saw
+Jigging/Drawing
+Composites
+Pneumatic 
+Research
+Hydraulic Press
+Drill Press
+Plasma Cutter
+Disk Sander
+CNC
+Wiring/Soldering
+Electrical
+Programming
+Tap/Dye
