@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.gantt.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_ganttFragment"
+            app:destination="@id/ganttFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ganttFragment"
+        android:name="com.example.gantt.GanttFragment"
+        android:label="GanttFragment"
+        tools:layout="@layout/fragment_gantt">
+        <action
+            android:id="@+id/action_ganttFragment_to_viewTaskFragment"
+            app:destination="@id/viewTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewTaskFragment"
+        android:name="com.example.gantt.ViewTaskFragment"
+        android:label="ViewTaskFragment"
+        tools:layout="@layout/fragment_view_task">
+        <action
+            android:id="@+id/action_viewTaskFragment_to_viewTaskItemFragment"
+            app:destination="@id/viewTaskItemFragment" />
+        <action
+            android:id="@+id/action_viewTaskFragment_to_completedTaskFragment"
+            app:destination="@id/completedTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewTaskItemFragment"
+        android:name="com.example.gantt.ViewTaskItemFragment"
+        android:label="ViewTaskItemFragment"
+        tools:layout="@layout/fragment_view_task_item">
+        <action
+            android:id="@+id/action_viewTaskItemFragment_to_viewTaskFragment"
+            app:destination="@id/viewTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/completedTaskFragment"
+        android:name="com.example.gantt.CompletedTaskFragment"
+        android:label="CompletedTaskFragment"
+        tools:layout="@layout/fragment_completed_task">
+        <action
+            android:id="@+id/action_completedTaskFragment_to_viewTaskFragment"
+            app:destination="@id/viewTaskFragment" />
+    </fragment>
+</navigation>

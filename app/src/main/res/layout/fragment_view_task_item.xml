@@ -1,98 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<layout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/task_item_name"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/colorTaskName"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:text="@string/task_item"
-            android:textColor="@android:color/white"
-            android:textAlignment="center"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/task_item_details"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/task_item_details"
-            android:layout_marginBottom="10dp"
-            android:textSize="20sp"
-            android:padding="10dp"
-            android:background="@color/colorTextBackground"/>
-        <TextView
-            android:id="@+id/skills_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/skills_needed"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/colorTaskItem"
-            android:textSize="20sp"
-            android:padding="10dp"/>
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/skills_needed"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/skill_description"
-            android:layout_marginBottom="10dp"
-            android:textSize="20sp"
-            android:padding="10dp"
-            android:background="@color/colorTextBackground"/>
-        <Button
-            android:id="@+id/add_skills"
-            style="@android:style/Widget.Button.Inset"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/add_skill"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/task_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorTaskName"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/task_item"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/files"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/files"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/colorTaskItem"
-            android:textSize="20sp"
-            android:padding="10dp"/>
-        <TextView
-            android:id="@+id/file_download"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/file_name"
-            android:layout_marginBottom="10dp"
-            android:background="@color/colorTextBackground"
-            android:textSize="20sp"
-            android:padding="10dp"
-            android:textColor="@color/colorFileText"/>
-        <Button
-            android:id="@+id/edit_button"
-            style="@android:style/Widget.Button.Inset"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/upload_file"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/task_item_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorTextBackground"
+                android:padding="10dp"
+                android:text="@string/task_item_details"
+                android:textSize="20sp" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/skills_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorTaskItem"
+                android:padding="10dp"
+                android:text="@string/skills_needed"
+                android:textSize="20sp" />
 
-</ScrollView>
+            <TextView
+                android:id="@+id/skills_needed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorTextBackground"
+                android:padding="10dp"
+                android:text="@string/skill_description"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/add_skills"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/add_skill"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/files"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorTaskItem"
+                android:padding="10dp"
+                android:text="@string/files"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/file_download"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorTextBackground"
+                android:padding="10dp"
+                android:text="@string/file_name"
+                android:textColor="@color/colorFileText"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/upload_file_button"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/upload_file"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/finished_button"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/finished"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>
