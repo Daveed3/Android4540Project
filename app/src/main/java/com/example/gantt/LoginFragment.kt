@@ -14,14 +14,23 @@ import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_login.*
 
 class LoginFragment : Fragment() {
-
+    public override fun onStart() {
+        super.onStart()
+        // Check if user is signed in (non-null) and update UI accordingly.
+        val currentUser = FirebaseAuth.getInstance().currentUser
+//        updateUI(currentUser)
+    }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentLoginBinding>(inflater,
             R.layout.fragment_login,container,false)
+
         //TODO: add functionality for login checking and loading database
+
+
+
         binding.loginButton.setOnClickListener { view : View ->
             view.findNavController().navigate(R.id.action_loginFragment_to_ganttFragment)
         }
@@ -34,15 +43,13 @@ class LoginFragment : Fragment() {
 
         println("nickname"+ binding.nameEdittextRegister.text.toString())
 
-        //Todo: firebase authentication to create user with email and password
+        //Todo: Firebase authentication to create user with email and password
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password).addOnCompleteListener {
             if (!it.isSuccessful) return@addOnCompleteListener
 
             //else if successful
-            Log.d("Login", "Login Sucess, Email is: + ${it.result?.user?.uid}")
-
+            Log.d("Login", "Login Sucess")
         }
-
         return binding.root
     }
 
