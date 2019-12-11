@@ -27,13 +27,8 @@ class LoginFragment : Fragment() {
         val binding = DataBindingUtil.inflate<FragmentLoginBinding>(inflater,
             R.layout.fragment_login,container,false)
 
-        //TODO: add functionality for login checking and loading database
+        // add functionality for login checking and loading database
 
-
-
-        binding.loginButton.setOnClickListener { view : View ->
-            view.findNavController().navigate(R.id.action_loginFragment_to_ganttFragment)
-        }
         val email = binding.emailEdittextRegister.text.toString()
         val password = binding.passwordEdittextRegister.text.toString()
 
@@ -43,13 +38,17 @@ class LoginFragment : Fragment() {
 
         println("nickname"+ binding.nameEdittextRegister.text.toString())
 
-        //Todo: Firebase authentication to create user with email and password
-        FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password).addOnCompleteListener {
-            if (!it.isSuccessful) return@addOnCompleteListener
+        // Firebase authentication to create user with email and password
+        binding.loginButton.setOnClickListener { view : View ->
+            view.findNavController().navigate(R.id.action_loginFragment_to_ganttFragment)
+            FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password).addOnCompleteListener {
+                if(!it.isSuccessful) return@addOnCompleteListener
 
-            //else if successful
-            Log.d("Login", "Login Sucess")
+                //else if successful
+                Log.d("Login", "Login Sucess")
+            }
         }
+
         return binding.root
     }
 
