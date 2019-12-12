@@ -1,14 +1,21 @@
 package com.example.gantt
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.gantt.databinding.ActivityMainBinding
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.example.gantt.databinding.ActivityMainBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.FirebaseDatabase
+
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
+    // Firebase instance variables
+    private val mFirebaseAuth: FirebaseAuth? = null
+    private val mFirebaseUser: FirebaseUser? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
