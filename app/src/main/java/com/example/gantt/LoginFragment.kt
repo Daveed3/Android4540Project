@@ -28,7 +28,6 @@ class LoginFragment : Fragment() {
             R.layout.fragment_login, container, false
         )
 
-//      TODO: Firebase authentication to create user with email and password
         binding.loginButton.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_loginFragment_to_ganttFragment)
 
@@ -43,8 +42,8 @@ class LoginFragment : Fragment() {
                 .addOnCompleteListener {
                     val user = auth.currentUser
                     if (!it.isSuccessful) Log.d("Return",return@addOnCompleteListener)
-                    //Email needs to be valid
-                    //Password needs to be at least 6 characters
+                    //TODO: Email needs to be valid
+                    //TODO: Password needs to be at least 6 characters
                     //To be stored in Authentication
 
 //                    if (it.isSuccessful) {

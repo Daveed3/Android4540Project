@@ -21,7 +21,7 @@ class ViewTaskItemFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentViewTaskItemBinding>(inflater,
-            R.layout.fragment_view_task,container,false)
+            R.layout.fragment_view_task_item,container,false)
 
         //TODO: add functionality for saving updates
 
