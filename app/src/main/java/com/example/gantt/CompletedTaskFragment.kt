@@ -2,6 +2,7 @@ package com.example.gantt
 
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.gantt.databinding.FragmentCompletedTaskBinding
+import com.google.firebase.database.FirebaseDatabase
 
 class CompletedTaskFragment : Fragment() {
 
@@ -23,12 +25,16 @@ class CompletedTaskFragment : Fragment() {
 
         //TODO: add functionality to register item as complete
         binding.submitCompletionButton.setOnClickListener { view : View ->
+
+            val database = FirebaseDatabase.getInstance()
+            val myRef = database.reference
+            myRef.child(binding.dateCompleted.text.toString()).child("notes").setValue(binding.notes.text.toString())
+            Log.d("Date completed",binding.dateCompleted.text.toString() )
+
             view.findNavController().navigate(R.id.action_completedTaskFragment_to_viewTaskFragment)
         }
 
-
         return binding.root
+
     }
-
-
 }
