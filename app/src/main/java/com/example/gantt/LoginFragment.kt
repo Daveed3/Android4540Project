@@ -39,9 +39,10 @@ class LoginFragment : Fragment() {
 
             auth = FirebaseAuth.getInstance()
             auth.createUserWithEmailAndPassword(email, password)
+
                 .addOnCompleteListener {
-                    val user = auth.currentUser
-                    if (!it.isSuccessful) Log.d("Return",return@addOnCompleteListener)
+//                    val user = auth.currentUser
+                    if (it.isSuccessful) Log.d("logged-in",return@addOnCompleteListener)
                     //TODO: Email needs to be valid
                     //TODO: Password needs to be at least 6 characters
                     //To be stored in Authentication
@@ -54,6 +55,7 @@ class LoginFragment : Fragment() {
 //                    } else {
 //                        Log.d("Login", "Something went wrong")
 //                    }
+
                 }
                 .addOnFailureListener {
                     Log.d("Main", "Failed to create user: ${it.message}")

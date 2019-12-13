@@ -34,9 +34,7 @@ class ViewTaskFragment : Fragment() {
         binding.addTaskButton.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_viewTaskFragment_to_viewTaskItemFragment)
         }
-
         return binding.root
     }
-
 
 }

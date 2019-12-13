@@ -14,6 +14,14 @@ import com.example.gantt.databinding.FragmentCompletedTaskBinding
 import com.google.firebase.database.FirebaseDatabase
 
 class CompletedTaskFragment : Fragment() {
+    val database = FirebaseDatabase.getInstance()
+    val myRef = database.reference
+
+//    fun writeDoneTask(dateComplete:String, notes:String) {
+//        myRef.database().ref('done/' + dateComplete).set({
+//                note: notes
+//        })
+//    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,14 +34,12 @@ class CompletedTaskFragment : Fragment() {
         //TODO: add functionality to register item as complete
         binding.submitCompletionButton.setOnClickListener { view : View ->
 
-            val database = FirebaseDatabase.getInstance()
-            val myRef = database.reference
+            myRef.child("ImDone").push()
             myRef.child(binding.dateCompleted.text.toString()).child("notes").setValue(binding.notes.text.toString())
             Log.d("Date completed",binding.dateCompleted.text.toString() )
 
             view.findNavController().navigate(R.id.action_completedTaskFragment_to_viewTaskFragment)
         }
-
         return binding.root
 
     }
