@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.navigation.findNavController
@@ -16,6 +17,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+
 
 
 class ViewTaskFragment : Fragment() {
@@ -34,6 +36,7 @@ class ViewTaskFragment : Fragment() {
 
         )
         // Read from the database
+        // https://firebase.google.com/docs/database/web/read-and-write
         myRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 val value = dataSnapshot.getValue(String::class.java)
@@ -45,6 +48,7 @@ class ViewTaskFragment : Fragment() {
                 // Failed to read value
                 Log.w(TAG, "Failed to read value.", error.toException())
             }
+
         })
         //TODO: add functionality for remembering changes
         binding.taskCheckbox.setOnClickListener { view: View ->
