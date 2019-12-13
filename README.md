@@ -14,7 +14,8 @@ Gantt is a team productivity app that schedules tasks for a project where the ti
 Often keeping track of time is something we all struggle with. Keeping ourselves organized helps lead to better productivity. While better productivy leads to better results. Gantt helps solve this, it helps you keep track of your task and the time needed for completion.
 
 ## Interesting Technical Aspect 🔍
-* Firebase
+* Implements Firebase usage to store data
+* Login/Register Feature
 
 ## Challenges 🛑
 * Merge conflicts
