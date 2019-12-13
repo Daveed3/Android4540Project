@@ -25,6 +25,8 @@ class GanttFragment : Fragment() {
 
         //TODO: add navigation from calendar day
         binding.button.setOnClickListener { view : View ->
+
+
             view.findNavController().navigate(R.id.action_ganttFragment_to_viewTaskFragment)
         }
 

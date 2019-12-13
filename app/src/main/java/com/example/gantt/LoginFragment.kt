@@ -27,6 +27,7 @@ class LoginFragment : Fragment() {
             inflater,
             R.layout.fragment_login, container, false
         )
+<<<<<<< HEAD
 
 //      TODO: Firebase authentication to create user with email and password
         binding.loginButton.setOnClickListener { view: View ->
@@ -47,6 +48,28 @@ class LoginFragment : Fragment() {
                     //Password needs to be at least 6 characters
                     //To be stored in Authentication
 
+=======
+
+        binding.loginButton.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_loginFragment_to_ganttFragment)
+
+            var email = binding.emailEdittextRegister.text.toString()
+            var password = binding.passwordEdittextRegister.text.toString()
+
+            Log.d("Login", "Email is:" + email)
+            Log.d("Login", "Password:" + password)
+
+            auth = FirebaseAuth.getInstance()
+            auth.createUserWithEmailAndPassword(email, password)
+
+                .addOnCompleteListener {
+//                    val user = auth.currentUser
+                    if (it.isSuccessful) Log.d("logged-in",return@addOnCompleteListener)
+                    //TODO: Email needs to be valid
+                    //TODO: Password needs to be at least 6 characters
+                    //To be stored in Authentication
+
+>>>>>>> 00c32bccc6069b668667f9db4475d8226a14812c
 //                    if (it.isSuccessful) {
 //                        Log.d("Login","email is: " + email)
 //                        Log.d("Login", "Login successful")
@@ -55,6 +78,10 @@ class LoginFragment : Fragment() {
 //                    } else {
 //                        Log.d("Login", "Something went wrong")
 //                    }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 00c32bccc6069b668667f9db4475d8226a14812c
                 }
                 .addOnFailureListener {
                     Log.d("Main", "Failed to create user: ${it.message}")
