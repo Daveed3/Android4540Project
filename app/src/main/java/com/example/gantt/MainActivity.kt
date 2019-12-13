@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity() {
 
         val database = FirebaseDatabase.getInstance()
         val myRef = database.reference
-        println("this is the db:" + myRef)
+//        println("this is the db:" + myRef)
 //        myRef.child("test").child("trainer").setValue("2")
-        myRef.child("trainer2").child("trainer1").setValue("Ash")
+//        myRef.child("trainer2").child("trainer1").setValue("Ash")
     }
 }
