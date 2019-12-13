@@ -1,6 +1,6 @@
 # CS 4540 Group Project - Android App: Gantt Chart 📈📱
 
-## Contibutors
+## Contributors
 * David San
 * Krystal Bernal
 * Pierce Wei
@@ -18,6 +18,7 @@ Often keeping track of time is something we all struggle with. Keeping ourselves
 
 ## Challenges 🛑
 * Merge conflicts
+* Being beginners at Android/Kotlin programming
 
 ## Mock Design 🖌
 ### Original mock design of how the app should function, designed by Krystal Bernal.
