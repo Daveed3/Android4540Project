@@ -53,4 +53,4 @@ Often keeping track of time is something we all struggle with. Keeping ourselves
 <img src="https://cdn.discordapp.com/attachments/642572163617914890/654840071958036503/Task_Completion.png" width="200">
 
 # Video Demo 📹
-<img src = "https://cdn.discordapp.com/attachments/361381453876953088/655116241140318208/ScreenRecorded1035.gif" width="200">
+<img src = "https://cdn.discordapp.com/attachments/642572163617914890/655120487629717525/videoDemo.gif" width="200">
