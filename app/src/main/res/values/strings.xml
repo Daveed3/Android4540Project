@@ -18,12 +18,12 @@
     <string name="notes">Completed by: \nPut notes here about project completion.</string>
     <string name="submit">Submit</string>
 
-    <string name="login_message">Enter login information:</string>
+    <string name="login_message">Enter information:</string>
     <string name="name">Full Name</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="log_in">Log In</string>
-    <string name="log_in2">Register</string>
+    <string name="register">Register</string>
 
     <string name="project_name">My Project</string>
 

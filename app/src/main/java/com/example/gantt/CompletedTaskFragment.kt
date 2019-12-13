@@ -28,7 +28,7 @@ class CompletedTaskFragment : Fragment() {
 
             val database = FirebaseDatabase.getInstance()
             val myRef = database.reference
-            myRef.child(binding.dateCompleted.text.toString()).child("notes").setValue(binding.notes.text.toString())
+            myRef.child("done").child(binding.dateCompleted.text.toString()).child("notes").setValue(binding.notes.text.toString())
             Log.d("Date completed",binding.dateCompleted.text.toString() )
 
             view.findNavController().navigate(R.id.action_completedTaskFragment_to_viewTaskFragment)
