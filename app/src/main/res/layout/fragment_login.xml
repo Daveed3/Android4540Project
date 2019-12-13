@@ -25,7 +25,9 @@
             android:id="@+id/password_edittext_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/password"/>
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
         <Button
             android:id="@+id/login_button"
             style="@android:style/Widget.Button.Inset"

@@ -18,11 +18,12 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Calendar Day Placeholder" />
+                android:text="Build Frame (11/1/19-11/12/19)" />
 
 
         </ScrollView>
