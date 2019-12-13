@@ -34,7 +34,7 @@ class LoginFragment : Fragment() {
             if (email.isEmpty() || password.isEmpty()) {
                 return@setOnClickListener
             }
-
+            //TODO: Email needs to be valid
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener() {
                     view.findNavController().navigate(R.id.action_loginFragment_to_ganttFragment)
@@ -52,8 +52,6 @@ class LoginFragment : Fragment() {
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener {
                     if (!it.isSuccessful) Log.d("Return", return@addOnCompleteListener)
-                    //TODO: Email needs to be valid
-                    //TODO: Password needs to be at least 6 characters
                 }
                 .addOnFailureListener {
                     Log.d("Login", "Failed to create user: ${it.message}")

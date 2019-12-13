@@ -21,7 +21,7 @@
     <string name="login_message">Enter information:</string>
     <string name="name">Full Name</string>
     <string name="email">Email</string>
-    <string name="password">Password</string>
+    <string name="password">Password (needs to be at least 6 characters)</string>
     <string name="log_in">Log In</string>
     <string name="register">Register</string>
 
