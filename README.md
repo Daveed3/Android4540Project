@@ -1,6 +1,6 @@
 # CS 4540 Group Project - Android App: Gantt Chart 📈📱
 
-## Contibutors
+## Contributors
 * David San
 * Krystal Bernal
 * Pierce Wei
@@ -14,10 +14,12 @@ Gantt is a team productivity app that schedules tasks for a project where the ti
 Often keeping track of time is something we all struggle with. Keeping ourselves organized helps lead to better productivity. While better productivy leads to better results. Gantt helps solve this, it helps you keep track of your task and the time needed for completion.
 
 ## Interesting Technical Aspect 🔍
-* Firebase
+* Implements Firebase usage to store data
+* Login/Register Feature
 
 ## Challenges 🛑
 * Merge conflicts
+* Being beginners at Android/Kotlin programming
 
 ## Mock Design 🖌
 ### Original mock design of how the app should function, designed by Krystal Bernal.
@@ -38,6 +40,12 @@ Often keeping track of time is something we all struggle with. Keeping ourselves
 
 <img src="https://cdn.discordapp.com/attachments/642572163617914890/654875821915504641/Login.png" width="200">
 
+## Calendar View
+
+* Main menu showing calendar and current projects
+
+<img src="https://cdn.discordapp.com/attachments/642572163617914890/655144648800600076/Screenshot_1576269014.png" width="200">
+
 ## Task View
 
 * Shows you what tasks are currently not completed
@@ -51,3 +59,4 @@ Often keeping track of time is something we all struggle with. Keeping ourselves
 <img src="https://cdn.discordapp.com/attachments/642572163617914890/654840071958036503/Task_Completion.png" width="200">
 
 # Video Demo 📹
+<img src = "https://cdn.discordapp.com/attachments/642572163617914890/655120487629717525/videoDemo.gif" width="200">
