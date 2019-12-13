@@ -21,11 +21,11 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
                 android:background="@color/colorTaskName"
+                android:hint="Enter Task Name here"
                 android:paddingStart="20dp"
                 android:paddingTop="10dp"
                 android:paddingEnd="20dp"
                 android:paddingBottom="10dp"
-                android:text="@string/task_item"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
@@ -36,8 +36,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:background="@color/colorTextBackground"
+                android:hint="Enter details here"
                 android:padding="10dp"
-                android:text="@string/task_item_details"
                 android:textSize="20sp" />
 
             <TextView
@@ -49,6 +49,7 @@
                 android:background="@color/colorTaskItem"
                 android:padding="10dp"
                 android:text="@string/skills_needed"
+                android:textColor="@color/colorFileText"
                 android:textSize="20sp" />
 
             <EditText
@@ -57,8 +58,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:background="@color/colorTextBackground"
+                android:hint="Enter skills needed here"
                 android:padding="10dp"
-                android:text="@string/skill_description"
                 android:textSize="20sp" />
 
             <Button
@@ -87,8 +88,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:background="@color/colorTextBackground"
+                android:hint="Enter file names here"
                 android:padding="10dp"
-                android:text="@string/file_name"
                 android:textColor="@color/colorFileText"
                 android:textSize="20sp" />
 
