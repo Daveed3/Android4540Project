@@ -52,6 +52,12 @@ Often keeping track of time is something we all struggle with. Keeping ourselves
 
 <img src="https://cdn.discordapp.com/attachments/642572163617914890/654840079600189450/Task_View.png" width="200">
 
+## Adding/Editing Task
+
+* Add/Edit your task
+
+<img src="https://cdn.discordapp.com/attachments/642572163617914890/655172598887481387/Screenshot_20191213-103027.png" width="200">
+
 ## Task Completion
 
 * Shows you the menu options for task completion
