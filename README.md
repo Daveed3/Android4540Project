@@ -40,6 +40,12 @@ Often keeping track of time is something we all struggle with. Keeping ourselves
 
 <img src="https://cdn.discordapp.com/attachments/642572163617914890/654875821915504641/Login.png" width="200">
 
+## Calendar View
+
+* Main menu showing calendar and current projects
+
+<img src="https://cdn.discordapp.com/attachments/642572163617914890/655144648800600076/Screenshot_1576269014.png" width="200">
+
 ## Task View
 
 * Shows you what tasks are currently not completed
